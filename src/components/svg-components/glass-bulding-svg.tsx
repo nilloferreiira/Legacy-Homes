@@ -1,4 +1,4 @@
-export function SkyScrapperSVG(props: any) {
+export function GlassBuildingSVG(props: any) {
   return (
     <svg
       width={498}

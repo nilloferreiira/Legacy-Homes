@@ -7,13 +7,12 @@ export function navBarAnimation() {
       .fromTo(
         '#navlinks',
         { height: 0 },
-        { height: 'auto', duration: 0.5, ease: 'power2.out' },
+        { height: 'auto', duration: 0.4, ease: 'power2.out' },
       )
       .fromTo(
         '#contact',
         { opacity: 0, y: -15 },
         { opacity: 1, y: 0, duration: 0.3 },
-        '-=0.5',
       )
       .fromTo(
         '#about-us',
