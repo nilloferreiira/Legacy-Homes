@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         bg: '#F0F0F0',
+        shark: '#1C1C1C',
       },
     },
   },

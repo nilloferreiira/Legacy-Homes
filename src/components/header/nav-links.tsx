@@ -16,7 +16,7 @@ export function NavLinks() {
         <li className="text-center" key={i} id={section.sub}>
           <a
             href={`#${section.sub}`}
-            className="leading-relaxed font-light text-sm lg:text-base hover:font-semibold transition-all"
+            className="leading-relaxed font-light text-shark text-sm lg:text-base hover:font-semibold transition-all"
           >
             {section.name}
           </a>
