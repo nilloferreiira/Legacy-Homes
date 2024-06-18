@@ -27,12 +27,12 @@ export function Header() {
   }, [isNavOpen])
 
   return (
-    <header className="flex flex-col items-center justify-center gap-6 w-full sticky top-0">
+    <header className="flex flex-col items-center justify-center gap-6 w-full top-0">
       <div className="flex items-center justify-between md:gap-6 w-full">
         <div className="w-32 md:w-40">
           <LogoSVG />
         </div>
-        <nav className="flex items-center justify-between md:w-1/2 w-full gap-4 sticky">
+        <nav className="flex items-center justify-between md:w-1/2 w-full gap-4">
           <div className="hidden md:flex w-full">
             <NavLinks />
           </div>

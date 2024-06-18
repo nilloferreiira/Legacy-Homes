@@ -6,13 +6,13 @@ export function servicesAnimation() {
   gsap.to('#services-title', {
     opacity: 100,
     y: 0,
-    ease: 'power2.in',
+    duration: 0.5,
+    ease: 'power1.in',
     scrollTrigger: {
-      trigger: '#services',
+      trigger: '#services-title',
       scrub: true,
-      markers: true,
-      start: 'top 880px',
-      end: 'bottom 900px',
+      start: 'top 800px',
+      end: 'bottom 880px',
     },
   })
 }
