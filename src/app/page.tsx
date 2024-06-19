@@ -1,3 +1,4 @@
+import { AboutUs } from '@/components/about-us/about-us'
 import { Header } from '@/components/header/header'
 import { HomeContainer } from '@/components/home/home'
 import { Services } from '@/components/services/services'
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <HomeContainer />
       <Services />
+      <AboutUs />
     </div>
   )
 }
