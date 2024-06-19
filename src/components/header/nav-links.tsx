@@ -1,9 +1,9 @@
 const sections = [
-  { name: 'Home', sub: 'home' },
-  { name: 'Services', sub: 'services' },
-  { name: 'Properties', sub: 'properties' },
-  { name: 'About Us', sub: 'about-us' },
-  { name: 'Contact', sub: 'contact' },
+  { name: 'Home', id: 'home' },
+  { name: 'Services', id: 'services' },
+  { name: 'Properties', id: 'properties' },
+  { name: 'About Us', id: 'about-us' },
+  { name: 'Contact', id: 'contact' },
 ]
 
 export function NavLinks() {
@@ -12,10 +12,10 @@ export function NavLinks() {
       className="flex flex-col md:flex-row items-center justify-between gap-4 w-full"
       id="navlinks"
     >
-      {sections.map((section: { name: string; sub: string }, i: number) => (
-        <li className="text-center" key={i} id={section.sub}>
+      {sections.map((section: { name: string; id: string }, i: number) => (
+        <li className="text-center" key={i} id={section.id}>
           <a
-            href={`#${section.sub}`}
+            href={`#${section.id}`}
             className="leading-relaxed font-light text-sm lg:text-base hover:font-semibold transition-all"
           >
             {section.name}

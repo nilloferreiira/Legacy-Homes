@@ -22,7 +22,9 @@ export function CardService({
         {children}
       </div>
       <h1 className="font-semibold text-3xl">{title}</h1>
-      <p className="text-base font-normal">{description}</p>
+      <p className="text-base font-normal" id="description">
+        {description}
+      </p>
     </div>
   )
 }
