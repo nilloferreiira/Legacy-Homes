@@ -12,8 +12,8 @@ export function aboutUsAnimation() {
       ease: 'power3.inOut',
       scrollTrigger: {
         trigger: '#about-us-trigger',
-        markers: true,
-        start: 'top 720px',
+        scrub: true,
+        start: 'top 600px',
         end: 'bottom 900px',
       },
     },
