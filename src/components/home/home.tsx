@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import skyScrapperPic from '../../assets/skyscrapper.png'
 import Image from 'next/image'
-import { homeAnimation } from '@/animations/home/home-animation'
+import { homeAnimation } from '@/animations/home-animation'
 
 export function HomeContainer() {
   useEffect(() => {

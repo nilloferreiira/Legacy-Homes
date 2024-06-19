@@ -54,6 +54,7 @@ const config = {
         },
         shark: '#1C1C1C',
         bg: '#F0F0F0',
+        lightGray: '#5C5C5C',
       },
       borderRadius: {
         lg: 'var(--radius)',

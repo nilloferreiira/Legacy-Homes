@@ -1,6 +1,6 @@
 'use client'
 
-import { servicesAnimation } from '@/animations/services/services-animation'
+import { servicesAnimation } from '@/animations/services-animation'
 import { useLayoutEffect } from 'react'
 import { GridCardServices } from './grid-cards-services'
 import { ServicesTitle } from './services-title'

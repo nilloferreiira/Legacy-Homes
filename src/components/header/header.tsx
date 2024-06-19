@@ -7,7 +7,7 @@ import { NavLinks } from './nav-links'
 import {
   navBarAnimation,
   navBarCloseAnimation,
-} from '@/animations/header/nav-bar-animation'
+} from '@/animations/nav-bar-animation'
 
 export function Header() {
   const [isNavOpen, setNavOpen] = useState<boolean>(false)
