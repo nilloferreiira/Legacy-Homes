@@ -1,3 +1,4 @@
+import { Title } from '../generics/title'
 import { Button } from '../ui/button'
 import { AboutUsImage } from './about-us-image'
 
@@ -11,7 +12,7 @@ export function AboutUs() {
         className="w-full md:w-3/4 2xl:w-2/4 flex flex-col items-center md:items-start justify-center md:justify-start gap-5 2xl:gap-10 lg:py-20"
         id="about-us-trigger"
       >
-        <h1 className="font-extrabold text-4xl lg:text-6xl">About Us</h1>
+        <Title>About Us</Title>
         <p className="font-normal text-sm md:text-base text-lightGray">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
           perferendis exercitationem totam consequuntur consequatur, esse
