@@ -31,10 +31,7 @@ export function AboutUs() {
           harum odit.
         </p>
 
-        <Button
-          size={'lg'}
-          className="text-sm font-light rounded-none bg-shark"
-        >
+        <Button size={'lg'} variant={'square'}>
           Learn More
         </Button>
       </div>

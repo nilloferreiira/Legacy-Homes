@@ -1,6 +1,7 @@
 import { AboutUs } from '@/components/about-us/about-us'
 import { Header } from '@/components/header/header'
 import { HomeContainer } from '@/components/home/home'
+import { Properties } from '@/components/properties/properties'
 import { Services } from '@/components/services/services'
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <HomeContainer />
       <Services />
       <AboutUs />
-      <div></div>
+      <Properties />
     </div>
   )
 }
