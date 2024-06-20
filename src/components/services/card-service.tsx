@@ -21,7 +21,7 @@ export function CardService({
       <div className="group-hover:text-bg transition-colors duration-300">
         {children}
       </div>
-      <h1 className="font-semibold text-3xl">{title}</h1>
+      <h1 className="font-semibold text-3xl uppercase">{title}</h1>
       <p className="text-base font-normal" id="description">
         {description}
       </p>

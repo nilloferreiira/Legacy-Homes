@@ -1,3 +1,8 @@
+import { CleaningSVG } from '../svg-components/cleaning-svg'
+import { FurnituresSVG } from '../svg-components/furnitures'
+import { LogisticsSVG } from '../svg-components/logistics-svg'
+import { MoreThenSVG } from '../svg-components/more-then-svg'
+import { PaintingSVG } from '../svg-components/painting-svg'
 import { PlumberIconSVG } from '../svg-components/plumber-icon-svg'
 import { CardService } from './card-service'
 
@@ -19,54 +24,54 @@ export function GridCardServices() {
         <PlumberIconSVG />
       </CardService>
       <CardService
-        title={'Plumber'}
+        title={'Painting'}
         description={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       Saepe reiciendis hic incidunt laboriosam officiis autem,
                       molestias iste quas sed cumque itaque corporis amet nam. 
                       Exercitationem consequuntur neque sunt perferendis cupiditate.
                       `}
       >
-        <PlumberIconSVG />
+        <PaintingSVG />
       </CardService>
       <CardService
-        title={'Plumber'}
+        title={'Logistics'}
         description={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       Saepe reiciendis hic incidunt laboriosam officiis autem,
                       molestias iste quas sed cumque itaque corporis amet nam. 
                       Exercitationem consequuntur neque sunt perferendis cupiditate.
                       `}
       >
-        <PlumberIconSVG />
+        <LogisticsSVG />
       </CardService>
       <CardService
-        title={'Plumber'}
+        title={'Cleaning'}
         description={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       Saepe reiciendis hic incidunt laboriosam officiis autem,
                       molestias iste quas sed cumque itaque corporis amet nam. 
                       Exercitationem consequuntur neque sunt perferendis cupiditate.
                       `}
       >
-        <PlumberIconSVG />
+        <CleaningSVG />
       </CardService>
       <CardService
-        title={'Plumber'}
+        title={'Furnitures'}
         description={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       Saepe reiciendis hic incidunt laboriosam officiis autem,
                       molestias iste quas sed cumque itaque corporis amet nam. 
                       Exercitationem consequuntur neque sunt perferendis cupiditate.
                       `}
       >
-        <PlumberIconSVG />
+        <FurnituresSVG />
       </CardService>
       <CardService
-        title={'Plumber'}
+        title={'More then'}
         description={`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       Saepe reiciendis hic incidunt laboriosam officiis autem,
                       molestias iste quas sed cumque itaque corporis amet nam. 
                       Exercitationem consequuntur neque sunt perferendis cupiditate.
                       `}
       >
-        <PlumberIconSVG />
+        <MoreThenSVG />
       </CardService>
     </div>
   )
