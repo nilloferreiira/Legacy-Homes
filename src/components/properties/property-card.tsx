@@ -1,9 +1,10 @@
 import Image, { StaticImageData } from 'next/image'
 import { MapPin } from 'lucide-react'
-import { PropertyInfo } from '@/components/properties/property-info'
+import { PropertyCardInfo } from '@/components/properties/property-card-info'
 import { Button } from '@/components/ui/button'
+import { ComponentProps } from 'react'
 
-interface PropertyCardProps {
+interface PropertyCardProps extends ComponentProps<'div'> {
   image: StaticImageData
   title: string
   location: string
@@ -17,8 +18,11 @@ interface PropertyCardProps {
 
 export function PropertyCard(props: PropertyCardProps) {
   return (
-    <div className="w-[358px] flex flex-col gap-3 items-start justify-center text-gray-900 border border-shark">
-      <Image src={props.image} alt={'Foto da propriedade'} />
+    <div
+      id={props.id}
+      className="w-[358px] flex flex-col gap-3 items-start justify-center text-gray-900 border border-shark"
+    >
+      <Image src={props.image} alt={'Foto da propriedade'} priority={true} />
       {/* property description  */}
       <div className="w-full mx-auto flex flex-col items-start justify-start gap-4 px-6 pb-4">
         <h1 className="font-medium text-base lg:text-lg">{props.title}</h1>
@@ -30,9 +34,15 @@ export function PropertyCard(props: PropertyCardProps) {
         </p>
         <p className="font-bold text-sm lg:text-base">{props.price}</p>
         <div className="w-full text-gray-800 space-y-4">
-          <PropertyInfo title={'Area (sqft)'} info={props.propertyInfo.area} />
-          <PropertyInfo title={'Bedrooms'} info={props.propertyInfo.bedrooms} />
-          <PropertyInfo
+          <PropertyCardInfo
+            title={'Area (sqft)'}
+            info={props.propertyInfo.area}
+          />
+          <PropertyCardInfo
+            title={'Bedrooms'}
+            info={props.propertyInfo.bedrooms}
+          />
+          <PropertyCardInfo
             title={'Bathrooms'}
             info={props.propertyInfo.bathrooms}
           />

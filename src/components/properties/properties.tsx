@@ -4,7 +4,10 @@ import { PropertiesGrid } from './properties-grid'
 
 export function Properties() {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-10">
+    <div
+      className="w-full flex flex-col items-center justify-center gap-10"
+      id="properties"
+    >
       <Title>Property</Title>
       <DescriptionP>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, aliquid.
@@ -12,8 +15,6 @@ export function Properties() {
         rerum hic, aspernatur praesentium nostrum iure assumenda similique totam
         nobis, mollitia consequuntur!
       </DescriptionP>
-
-      {/* properties grid */}
       <PropertiesGrid />
     </div>
   )

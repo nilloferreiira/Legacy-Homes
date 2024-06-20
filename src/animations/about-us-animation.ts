@@ -4,7 +4,7 @@ export function aboutUsAnimation() {
   gsap.registerPlugin(ScrollTrigger)
   gsap.fromTo(
     '#about-us-image',
-    { opacity: 0, y: 160 },
+    { opacity: 0, y: 260 },
     {
       opacity: 100,
       y: 0,

@@ -15,7 +15,13 @@ export function AboutUsImage() {
       className="w-full 2xl:w-1/3 md:w-2/4 flex items-center justify-center opacity-0"
       id="about-us-image"
     >
-      <Image src={AboutUsImg} alt={''} width={500} height={620} />
+      <Image
+        src={AboutUsImg}
+        alt={''}
+        width={500}
+        height={620}
+        priority={true}
+      />
     </div>
   )
 }
