@@ -22,7 +22,16 @@ export function PropertyCard(props: PropertyCardProps) {
       id={props.id}
       className="w-[358px] flex flex-col gap-3 items-start justify-center text-gray-900 border border-shark"
     >
-      <Image src={props.image} alt={'Foto da propriedade'} priority={true} />
+      <div className="w-full h-64 relative">
+        <Image
+          src={props.image}
+          alt={'Foto da propriedade'}
+          priority={true}
+          fill
+          style={{ objectFit: 'cover' }}
+          className="rounded-none"
+        />
+      </div>
       {/* property description  */}
       <div className="w-full mx-auto flex flex-col items-start justify-start gap-4 px-6 pb-4">
         <h1 className="font-medium text-base lg:text-lg">{props.title}</h1>
