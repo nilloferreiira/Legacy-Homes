@@ -1,4 +1,5 @@
 import { AboutUs } from '@/components/about-us/about-us'
+import { ClientsTestimonials } from '@/components/clients-testimonials/clients-testimonials'
 import { Header } from '@/components/header/header'
 import { HomeContainer } from '@/components/home/home'
 import { HowItWorks } from '@/components/how-it-works/how-it-works'
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutUs />
       <Properties />
       <HowItWorks />
+      <ClientsTestimonials />
     </div>
   )
 }
