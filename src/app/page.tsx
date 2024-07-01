@@ -3,6 +3,7 @@ import { ClientsTestimonials } from '@/components/clients-testimonials/clients-t
 import { Header } from '@/components/header/header'
 import { HomeContainer } from '@/components/home/home'
 import { HowItWorks } from '@/components/how-it-works/how-it-works'
+import { Partners } from '@/components/partners/partners'
 import { Properties } from '@/components/properties/properties'
 import { Services } from '@/components/services/services'
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Properties />
       <HowItWorks />
       <ClientsTestimonials />
+      <Partners />
     </div>
   )
 }
