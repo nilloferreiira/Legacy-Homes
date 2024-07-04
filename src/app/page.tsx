@@ -1,5 +1,6 @@
 import { AboutUs } from '@/components/about-us/about-us'
 import { ClientsTestimonials } from '@/components/clients-testimonials/clients-testimonials'
+import { Footer } from '@/components/footer/footer'
 import { Header } from '@/components/header/header'
 import { HomeContainer } from '@/components/home/home'
 import { HowItWorks } from '@/components/how-it-works/how-it-works'
@@ -21,12 +22,8 @@ export default function Home() {
         <ClientsTestimonials />
         <Partners />
       </div>
-      {/* Newsletter  */}
       <NewsLetter />
-      {/* Footer  */}
-      <div className="w-full h-64 bg-zinc-600 flex flex-col items-center">
-        footer
-      </div>
+      <Footer />
     </>
   )
 }

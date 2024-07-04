@@ -1,12 +1,13 @@
 interface DescriptionPProps {
   children: string
   variant?: 'left'
+  color?: 'white'
 }
 
 export function DescriptionP(props: DescriptionPProps) {
   return (
     <p
-      className={`${props.variant === 'left' ? 'font-light text-left w-full md:w-2/3 text-[#5C5C5C]' : 'font-light text-left lg:text-center w-full md:w-2/3 text-[#5C5C5C]'}`}
+      className={`font-light  ${props.variant === 'left' ? 'text-left' : 'text-left lg:text-center'} w-full md:w-2/3 ${props.color === 'white' ? 'text-white/80' : 'text-[#5C5C5C]'}`}
     >
       {props.children}
     </p>
