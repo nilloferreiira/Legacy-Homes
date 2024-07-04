@@ -21,7 +21,12 @@ export default function Home() {
         <ClientsTestimonials />
         <Partners />
       </div>
+      {/* Newsletter  */}
       <NewsLetter />
+      {/* Footer  */}
+      <div className="w-full h-64 bg-zinc-600 flex flex-col items-center">
+        footer
+      </div>
     </>
   )
 }

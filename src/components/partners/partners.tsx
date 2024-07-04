@@ -23,7 +23,7 @@ export function Partners() {
   }
 
   return (
-    <div className="w-full mx-auto flex flex-col text-center items-center justify-center gap-10 lg:flex-row lg:items-start 2xl:justify-between lg:px-24">
+    <div className="w-full mx-auto flex flex-col text-center items-center justify-center gap-10 lg:flex-row lg:items-start 2xl:justify-between lg:px-24 mb-6 lg:mb-48">
       {/* left   */}
       <div className="w-full lg:w-2/3 flex flex-col items-center text-center justify-center gap-5 lg:items-start lg:text-left lg:pt-12">
         <Title>partners</Title>
