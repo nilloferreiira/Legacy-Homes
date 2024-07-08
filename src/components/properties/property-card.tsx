@@ -28,7 +28,7 @@ export function PropertyCard(props: PropertyCardProps) {
           alt={'Foto da propriedade'}
           priority={true}
           fill
-          sizes="100vw"
+          sizes="358px"
           style={{ objectFit: 'cover' }}
           className="rounded-none"
         />
