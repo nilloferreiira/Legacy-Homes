@@ -1,7 +1,4 @@
-interface Link {
-  name: string
-  href: string | null
-}
+import { FooterLinks, Link } from './footer-links'
 
 interface FooterSectionProps {
   children: string
@@ -10,19 +7,9 @@ interface FooterSectionProps {
 
 export function FooterSection(props: FooterSectionProps) {
   return (
-    <div className="flex flex-col w-1/4 items-center justify-center md:items-start md:justify-start gap-10">
+    <div className="flex flex-col w-full lg:w-1/4 items-center justify-center md:items-start md:justify-start gap-5 md:gap-10 text-center md:text-left">
       <h1 className="font-bold md:text-lg text-xl">{props.children}</h1>
-      <div className="flex flex-col items-center justify-center md:items-start md:justify-start text-left gap-5">
-        {props.links.map((link: Link, i: number) => (
-          <a
-            key={i}
-            href={link.href!}
-            className="text-white/80 hover:text-white/90"
-          >
-            {link.name}
-          </a>
-        ))}
-      </div>
+      <FooterLinks links={props.links} />
     </div>
   )
 }
