@@ -6,7 +6,10 @@ export function Footer() {
     // Footer background Image
     <div className="w-full md:h-[397px] bg-footer-bg bg-cover bg-center bg-no-repeat md:min-h-full">
       {/* footer Container */}
-      <div className="w-full md:h-full bg-zinc-900/80 text-white flex flex-col items-center justify-center md:flex-row md:items-start mx-auto gap-5 px-8 md:px-16 lg:px-32 py-8 md:py-10 lg:py-12 2xl:py-20">
+      <div
+        id="contact"
+        className="w-full md:h-full bg-zinc-900/80 text-white flex flex-col items-center justify-center md:flex-row md:items-start mx-auto gap-5 px-8 md:px-16 lg:px-32 py-8 md:py-10 lg:py-12 2xl:py-20"
+      >
         {/* footer header */}
         <FooterHeader />
         {/* footer content  */}

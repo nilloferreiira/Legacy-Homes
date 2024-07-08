@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const sections = [
   { name: 'Home', id: 'home' },
   { name: 'Services', id: 'services' },
@@ -13,13 +15,13 @@ export function NavLinks() {
       id="navlinks"
     >
       {sections.map((section: { name: string; id: string }, i: number) => (
-        <li className="text-center" key={i} id={section.id}>
-          <a
+        <li className="text-center" key={i} id={`link-${section.id}`}>
+          <Link
             href={`#${section.id}`}
             className="leading-relaxed font-light text-sm lg:text-base hover:font-semibold transition-all"
           >
             {section.name}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
