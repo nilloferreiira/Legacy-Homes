@@ -13,7 +13,7 @@ export function ClientsCard(props: ClientsCardProps) {
       <div className="w-full xl:w-4/6">
         <Image src={props.src} alt={''} priority={true} />
       </div>
-      {/* mostrar se for o index ativo  */}
+      {/* criar funcao para mostrar se for o index ativo  */}
       {true && (
         <div className="w-full p-4 flex flex-col items-start justify-start gap-8">
           <Quote fill="#1D1D1D" className="size-16" />
@@ -23,6 +23,10 @@ export function ClientsCard(props: ClientsCardProps) {
             blanditiis, nemo pariatur facilis reprehenderit! Ratione non
             consequuntur autem laudantium fugiat cum et.`}
           </p>
+          <div className="text-left">
+            <h1 className="font-black text-2xl uppercase">maciej witt</h1>
+            <h4 className="text-lightGray font-extralight">Singapore</h4>
+          </div>
         </div>
       )}
     </div>
