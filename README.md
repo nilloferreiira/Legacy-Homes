@@ -53,3 +53,5 @@ Sinta-se à vontade para explorar, modificar e usar este projeto como referênci
 ## Contato
 
 Para mais informações ou questões, entre em contato através do email: [nilloferreiira@gmail.com](mailto:nilloferreiira@gmail.com)
+
+![foto mais recente](/public/assets/readmeimg.png)
